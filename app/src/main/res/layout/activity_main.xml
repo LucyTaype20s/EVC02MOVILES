@@ -22,7 +22,11 @@
         app:layout_constraintStart_toStartOf="@+id/guideline100"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
 
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+
+        android:onClick="EscribeCero"
+
+        />
 
     <Button
         android:id="@+id/btn_AC"
@@ -105,7 +109,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline100"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="EscribeSiete"
+
+        />
 
     <Button
         android:id="@+id/btn_8"
@@ -123,7 +131,11 @@
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="EscribeOcho"
+
+        />
     <Button
         android:id="@+id/btn_9"
         android:text="9"
@@ -139,7 +151,9 @@
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="EscribeNueve"
+        />
 
     <Button
         android:id="@+id/btnMultiplicacion"
@@ -173,7 +187,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline100"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="EscribeCuatro"
+
+        />
     <Button
         android:id="@+id/btn5"
         android:layout_width="78dp"
@@ -189,7 +206,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="EscribeCinco"
+        />
     <Button
         android:id="@+id/btn6"
         android:layout_width="78dp"
@@ -205,7 +225,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="EscribeSeis"
+
+        />
     <Button
         android:id="@+id/btnResta"
         android:layout_width="78dp"
@@ -223,6 +246,80 @@
         app:layout_constraintTop_toTopOf="@+id/guideline205"
         app:layout_constraintVertical_bias="1.0" />
     <Button
+        android:id="@+id/btn1"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_margin="2dp"
+        android:fontFamily="sans-serif"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintEnd_toStartOf="@+id/guideline101"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline100"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="EscribeUno"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_margin="2dp"
+        android:fontFamily="sans-serif"
+        android:text="2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintEnd_toStartOf="@+id/guideline102"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline101"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="EscribeDos"
+
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_margin="2dp"
+        android:fontFamily="sans-serif"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline102"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="EscribeTres"
+
+        />
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_margin="2dp"
+        android:fontFamily="sans-serif"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintEnd_toStartOf="@+id/guideline104"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline103"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
         android:id="@+id/btn0"
         android:layout_width="154dp"
         android:layout_height="78dp"
@@ -232,12 +329,16 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline100"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline207"
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="EscribeCero"
+
+        />
     <Button
         android:id="@+id/btnComa"
         android:layout_width="78dp"
@@ -248,11 +349,11 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintTop_toTopOf="@+id/guideline207"
         app:layout_constraintVertical_bias="1.0" />
     <Button
         android:id="@+id/btnIgual"
@@ -264,11 +365,11 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintTop_toTopOf="@+id/guideline207"
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
