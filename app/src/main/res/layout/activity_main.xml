@@ -18,11 +18,11 @@
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toEndOf="@+id/guideline104"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="@+id/guideline100"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
 
-        app:layout_constraintVertical_bias="0.0"
+
 
         android:onClick="EscribeCero"
 
@@ -40,10 +40,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline101"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="@+id/guideline100"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="1.0"
+
         android:onClick="LimpiarResultado"
 
         />
@@ -59,10 +59,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="1.0" />
+         />
     <Button
         android:id="@+id/btn_Porcentaje"
         android:layout_width="78dp"
@@ -75,10 +75,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="1.0" />
+         />
 
 
     <Button
@@ -87,6 +87,7 @@
         android:layout_height="63dp"
         android:layout_margin="2dp"
         android:background="#FFC107"
+        android:backgroundTint="#FFC107"
         android:fontFamily="sans-serif"
         android:onClick="Dividir"
         android:text="/"
@@ -95,10 +96,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
-        app:layout_constraintHorizontal_bias="0.714"
+
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="0.0" />
+         />
 
     <Button
         android:id="@+id/btn_7"
@@ -592,20 +593,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="228dp"
-        android:layout_height="117dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/guideline210"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
-        app:layout_constraintStart_toStartOf="@+id/guideline100"
-        app:layout_constraintTop_toTopOf="@+id/guideline208">
 
-        <ListView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/btn_ejercicio3"
@@ -615,7 +603,10 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_itemList"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline208" />
+        app:layout_constraintTop_toTopOf="@+id/guideline208"
+
+
+        />
 
     <TextView
         android:id="@+id/tv_itemList"

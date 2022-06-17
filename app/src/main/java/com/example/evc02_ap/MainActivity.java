@@ -37,17 +37,15 @@ public class MainActivity extends AppCompatActivity {
         tv_bienvenida=findViewById(R.id.tvBienvenida);
 
 
+
         tv_respuesta=findViewById(R.id.tvRespuesta);
 
-        lista=findViewById(R.id.list);
-Ciudades=new ArrayList<>();
-Ciudades.add("Panamá °12");
-        Ciudades.add("Suiza °23");
-        Ciudades.add("Colombia °18");
-ArrayAdapter<String>adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Ciudades);
-lista.setAdapter(adapter);
+
 
 }
+
+
+
     public void MuestraNombre(View view){
 
         txt_rptaNombre.setText(txt_nombre.getText().toString()+"");
