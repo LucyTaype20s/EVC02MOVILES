@@ -43,7 +43,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline100"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="LimpiarResultado"
+
+        />
     <Button
         android:id="@+id/btn_Diferencia"
         android:layout_width="78dp"
@@ -91,7 +94,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="Dividir"
+        />
 
 
     <Button
@@ -170,7 +175,9 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="Multiplicar"
+        />
 
     <Button
         android:id="@+id/btn4"
@@ -244,10 +251,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="Restar"
+        />
     <Button
         android:id="@+id/btn1"
-        android:layout_width="78dp"
+        android:layout_width="70dp"
         android:layout_height="78dp"
         android:layout_margin="2dp"
         android:fontFamily="sans-serif"
@@ -317,7 +327,9 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="Sumar"
+        />
 
     <Button
         android:id="@+id/btn0"
@@ -370,7 +382,11 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline207"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+
+        android:onClick="MostrarResultado"
+
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline100"

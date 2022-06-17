@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,124 +47,162 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void EscribeCero(View view){
-        float valor=Float.parseFloat(tv_respuesta.getText().toString());
-        if(valor==0.0f){
+        float numero1=Float.parseFloat(tv_respuesta.getText().toString());
+        if(numero1==0.0f){
             tv_respuesta.setText("0");
-            numero1=0.0f;
-            numero2=0.0f;
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"0");
-            numero1=0.0f;
-            numero2=0.0f;
         }
     }
     public void EscribeUno(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("1");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"1");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeDos(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("2");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"2");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeTres(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("3");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"3");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeCuatro(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("4");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"4");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeCinco(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("5");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"5");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeSeis(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("6");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"6");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeSiete(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("7");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"7");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeOcho(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("8");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"8");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }
     }
     public void EscribeNueve(View view){
         float valor=Float.parseFloat(tv_respuesta.getText().toString());
         if(valor==0.0f){
             tv_respuesta.setText("9");
-            numero1=0.0f;
-            numero2=0.0f;
+
         }else{
             tv_respuesta.setText(tv_respuesta.getText()+"9");
+
+        }
+    }
+
+
+    public void LimpiarResultado(View view){
+        tv_respuesta.setText("0");
+        numero1=0.0f;
+        numero2=0.0f;
+        operacion="";
+    }
+
+    public void Dividir(View view){
+        numero1=Float.parseFloat(tv_respuesta.getText().toString());
+        operacion="/";
+        tv_respuesta.setText("0");
+    }
+    public void Sumar(View view){
+        numero1=Float.parseFloat(tv_respuesta.getText().toString());
+        operacion="+";
+        tv_respuesta.setText("0");
+    }
+    public void Restar(View view){
+        numero1=Float.parseFloat(tv_respuesta.getText().toString());
+        operacion="-";
+        tv_respuesta.setText("0");
+    }
+    public void Multiplicar(View view){
+        numero1=Float.parseFloat(tv_respuesta.getText().toString());
+        operacion="*";
+        tv_respuesta.setText("0");
+    }
+    public void MostrarResultado(View view){
+        numero2=Float.parseFloat(tv_respuesta.getText().toString());
+        if(operacion.equals("/")){
+            if(numero2==0.0f){
+                tv_respuesta.setText("0");
+                Toast.makeText(this, "Operacion no valida", Toast.LENGTH_SHORT).show();
+                numero1=0.0f;
+                numero2=0.0f;
+            }else{
+                float result=numero1/numero2;
+                tv_respuesta.setText(result+"");
+                numero1=0.0f;
+                numero2=0.0f;
+            }
+        }else if(operacion.equals("+")){
+            float result=numero1+numero2;
+            tv_respuesta.setText(result+"");
+            numero1=0.0f;
+            numero2=0.0f;
+        }else if(operacion.equals("-")){
+            float result=numero1-numero2;
+            tv_respuesta.setText(result+"");
+            numero1=0.0f;
+            numero2=0.0f;
+        }else if(operacion.equals("*")){
+            float result=numero1*numero2;
+            tv_respuesta.setText(result+"");
             numero1=0.0f;
             numero2=0.0f;
         }
     }
-
 }
+
