@@ -605,19 +605,52 @@
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline208"
 
+android:onClick="onClick"
 
         />
 
     <TextView
         android:id="@+id/tv_itemList"
-        android:layout_width="105dp"
-        android:layout_height="35dp"
-        android:text="TextView"
+        android:layout_width="113dp"
+        android:layout_height="88dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline210"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline208" />
+        app:layout_constraintTop_toTopOf="@+id/guideline208"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <RadioGroup
+        android:id="@+id/rg_grupo"
+        android:layout_width="211dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline210"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintStart_toStartOf="@+id/guideline100"
+        app:layout_constraintTop_toTopOf="@+id/guideline208">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panamá 32°"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suiza 13°"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colombia 21°"
+            android:textAlignment="center" />
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
