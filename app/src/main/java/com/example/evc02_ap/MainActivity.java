@@ -4,18 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
+    private ListView lista;
     private EditText txt_nombre,txt_apellido,txt_rptaNombre,txt_rptaApellido;
     private TextView tv_bienvenida,tv_respuesta;
     float numero1=0.0f;
     float numero2=0.0f;
     String operacion="";
 
+
+
+    private ArrayList<String> Ciudades;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         tv_respuesta=findViewById(R.id.tvRespuesta);
 
-    }
+        lista=findViewById(R.id.list);
+Ciudades=new ArrayList<>();
+Ciudades.add("Panamá °12");
+        Ciudades.add("Suiza °23");
+        Ciudades.add("Colombia °18");
+ArrayAdapter<String>adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Ciudades);
+lista.setAdapter(adapter);
+
+}
     public void MuestraNombre(View view){
 
         txt_rptaNombre.setText(txt_nombre.getText().toString()+"");
@@ -204,5 +220,6 @@ public class MainActivity extends AppCompatActivity {
             numero2=0.0f;
         }
     }
+
 }
 
